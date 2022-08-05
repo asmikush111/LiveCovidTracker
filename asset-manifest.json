@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/LiveCovidTracker/static/css/main.ef3f677a.css",
+    "main.js": "/LiveCovidTracker/static/js/main.d33b30fe.js",
+    "index.html": "/LiveCovidTracker/index.html",
+    "main.ef3f677a.css.map": "/LiveCovidTracker/static/css/main.ef3f677a.css.map",
+    "main.d33b30fe.js.map": "/LiveCovidTracker/static/js/main.d33b30fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef3f677a.css",
+    "static/js/main.d33b30fe.js"
+  ]
+}
