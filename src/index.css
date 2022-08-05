@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Moontserrat",sans-serif;
+}
+
+.container-fluid{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-responsive{
+    box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+tr:hover{
+    background-color:lightgrey;
+}
+
+td,th{
+    position: relative;
+}
+
+.table td, .table th{ 
+    vertical-align: top;
+    border-top: none;
+}
+
+td:hover::after,th:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #f2f2f2;
+    left: 0;
+    top: -5000px;
+    height: 5000px;
+    width: 100%;
+    z-index: -1;
+}
+
+.table tr td:hover:nth-child(4){
+    background-color: rgb(231,83,115);
+    color: aliceblue;
+    border: 0.5px solid rgb(12,12,12);
+}
+
+.table tr td:hover{
+    background-color: rgb(117,223,122);
+    color: aliceblue;
+    border: 0.5px solid rgb(12,12,12);
+}
+
+.thead-dark{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section{
+    margin: 2%;
+    text-align:center;
+}
+
+p{
+    font-weight: bold; 
+    text-shadow: 1px 1px 2px #000000;
+    margin: 2px;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    padding-right: 2rem;
+}
+
+select{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    height: 2rem;
+    text-align: center;
+    font-style: bold;
+    border: none;
+    background-color: #000000;
+    outline: none;
+    color: white;
+    box-shadow: 1px 2px 3px 1px grey;
+}
+
+input{
+    height: 2rem;
+    text-align: center;
+    margin: 1% 1% 0% 0%;
+    font-weight: bold;
+    border: none;
+    text-transform: capitalize;
+    box-shadow: 1px 2px 3px 1px grey;
+    outline: none;
+}
+
+button {
+    height: 2rem;
+    border-radius: 10%;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    box-shadow: 1px 2px 3px 1px grey;
+}
+
+.card{
+     width: calc(80%/3);
+     margin: 2%;
+     transition: 0.3s;
+     height:30vh;
+     border-radius: 5%;
+     box-shadow: 1px 2px 3px 1px grey;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.card:hover{
+    transform:scale(1.1);
+} 
+
+.card__name{
+    font-size: 24px;
+    color: grey;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.card__name span {
+    font-size: 15px;
+}
+
+.card__total {
+    font-size: 20px;
+    color: white;
+}
+
+footer p{
+    text-shadow: none;
+    margin-top: 5px;
+    font-weight: none;
+    line-height:30px;
+    color: rgb(132, 128, 128);
+}
+
+.nav-link
+{
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px){
+    .card__name ,.card__total{
+        font-size: 15px;
+    }
+    select{
+        width: 70%;
+    }
+    .card{
+    width: calc(80%/2);
+    }
+}
+
+@media (max-width: 330px){
+    .card__name,.card__total{
+        font-size: 15px;
+    }
+    .card{
+    width: 100%;
+    }
+}
+
+@media (max-width:768px){
+    table{
+       font-size: 8px;
+       font-weight: bold;
+    }
+
+}
+
